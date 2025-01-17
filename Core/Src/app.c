@@ -12,7 +12,7 @@
 extern TIM_HandleTypeDef htim1;
 
 void setDuty(uint8_t duty) {
-	htim1.Instance->CCR1 = (duty) *10;
+	htim1.Instance->CCR1 = (duty) *100;
 	htim1.Instance->CCR2 = (duty) *10;
 	htim1.Instance->CCR3 = (duty) *10;
 }
